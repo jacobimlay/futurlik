@@ -1,0 +1,28 @@
+:root {
+  font-family: 'monoid-regular';
+  font-size: 10px;
+  @include hidpi(1.5) {
+    font-family: 'monoid-retina';
+  }
+}
+
+strong, 
+bold {
+  font-family: 'monoid-bold';
+}
+
+em {
+  font-family: 'monoid-italic';
+}
+
+.body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+  @include outer-container();
+}

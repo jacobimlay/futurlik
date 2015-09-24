@@ -1,0 +1,7 @@
+.footer {
+  width: 100%;
+  @include outer-container();
+  div {
+    @include span-columns(12);
+  }
+}
